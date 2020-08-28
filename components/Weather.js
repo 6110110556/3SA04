@@ -9,7 +9,8 @@ export default function Weather(props) {
         main: '-',
         description: '-',
         temp: 0,
-        name: '-'
+        name: '-',
+        feel: 0
     })
     
     useEffect(() => {
@@ -22,29 +23,26 @@ export default function Weather(props) {
                     main: json.weather[0].main,
                     description: json.weather[0].description,
                     temp: json.main.temp,
+                    feel: json.main.feels_like,
                     name: json.name});
                 })
             .catch((error) => {
                 console.warn(error);
             });
         }
-    }, [props.zipCodem])
-    
+    }, [props.zipCode])
 
     return (
-        <ImageBackground source={require('../bg03.png')} style={styles.backdrop}>
-            <Forecast {...forecastInfo}/>
-            {/* <Text>{props.zipCode}</Text> */}
-        </ImageBackground>
+        <Forecast {...forecastInfo}/>
     )
 }
 
-const styles = StyleSheet.create({
-    backdrop: {
-        flexDirection: 'column', //This is Default this is Portrait
-        // justifyContent: 'center',
-        alignItems: 'center', // opposite of FlexDirection is lanscape
-        width: '100%',
-        height: '100%',
-    }
-})
+// const styles = StyleSheet.create({
+//     backdrop: {
+//         flexDirection: 'column', //This is Default this is Portrait
+//         // justifyContent: 'center',
+//         alignItems: 'center', // opposite of FlexDirection is lanscape
+//         width: '100%',
+//         height: '100%',
+//     }
+// })

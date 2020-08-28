@@ -185,56 +185,56 @@ import { render } from 'react-dom'
               
               <View style={styles.bgTextColumn}>
                 <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '92000'})
-                  }}>
-                    <Text style={styles.Ctext01}>Trang</Text>
+                  navigation.navigate('Weather', {zipCode: '92000'})
+                }}>
+                  <Text style={styles.Ctext01}>Trang</Text>
                 </TouchableHighlight>
               </View>
               <View style={styles.bgTextColumn}>
                 <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '50000'})
-                  }}>
-                  <Text style={styles.Ctext01}>Chiangmai</Text>
+                  navigation.navigate('Weather', {zipCode: '50000'})
+                }}>
+                    <Text style={styles.Ctext01}>Chiangmai</Text>
                 </TouchableHighlight>
               </View>
               
               <View style={styles.bgTextColumn}>
-              <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '40000'})
-                  }}>
-              <Text style={styles.Ctext01}>Khonkaen</Text>
-              </TouchableHighlight>
+                <TouchableHighlight onPress={() => {
+                  navigation.navigate('Weather', {zipCode: '40000'})
+                }}>
+                  <Text style={styles.Ctext01}>Khonkaen</Text>
+                </TouchableHighlight>
               </View>
             </View>
 
             <View style={styles.bgTextBig}>
               <View style={styles.bgTextColumn}>
-              <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '20000'})
-                  }}>
-              <Text style={styles.Ctext01}>Pattaya</Text>
-              </TouchableHighlight>
+                <TouchableHighlight onPress={() => {
+                  navigation.navigate('Weather', {zipCode: '20000'})
+                }}>
+                  <Text style={styles.Ctext01}>Pattaya</Text>
+                </TouchableHighlight>
               </View>
               <View style={styles.bgTextColumn}>
-              <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '57000'})
-                  }}>
-              <Text style={styles.Ctext01}>ChiangRai</Text>
-              </TouchableHighlight>
+                <TouchableHighlight onPress={() => {
+                  navigation.navigate('Weather', {zipCode: '57000'})
+                }}>
+                  <Text style={styles.Ctext01}>ChiangRai</Text>
+                </TouchableHighlight>
               </View>
               <View style={styles.bgTextColumn}>
-              <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '81000'})
-                  }}>
-              <Text style={styles.Ctext01}>Krabi</Text>
-              </TouchableHighlight>
+                <TouchableHighlight onPress={() => {
+                  navigation.navigate('Weather', {zipCode: '52000'})
+                }}>
+                  <Text style={styles.Ctext01}>Lampang</Text>
+                </TouchableHighlight>
               </View>
               <View style={styles.bgTextColumn}>
-              <TouchableHighlight onPress={() => {
-                    navigation.navigate('Weather', {zipCode: '96000'})
-                  }}>
-                  <Text style={styles.Ctext01}>Narathiwat</Text>
-              </TouchableHighlight>
+                <TouchableHighlight onPress={() => {
+                  navigation.navigate('Weather', {zipCode: '53000'})
+                }}>
+                  <Text style={styles.Ctext01}>Phitsanulok</Text>
+                </TouchableHighlight>
               </View>
             </View>
               
@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         paddingTop: '10%',
         paddingBottom: '10%',
-        paddingLeft: '30%',    
+        paddingLeft: '20%',    
         // justifyContent: 'stretch',
         // paddingTop: '10%',
     },
