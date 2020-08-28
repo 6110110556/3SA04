@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, Image, StyleSheet, ImageBackground } from 'react-native'
 
 export default function Forecast(props){
-    console.log(props.name)
+    // console.log(props.name)
    var picture = "";
    var nameProv = "";
     if (props.name == "Hat Yai") {
