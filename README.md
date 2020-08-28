@@ -1,5 +1,3 @@
-# 3SA04
-
 # Weather each province
 
 นายอาเรฟ หมัดอะดั้ม 6110110556 sec01
@@ -23,7 +21,9 @@
 
 ![HOME](https://raw.githubusercontent.com/6110110556/3SA04/master/Home.png)
 
-<br>
+เมื่อกดไปยัง github me
+
+![enter image description here](https://github.com/6110110556/3SA04/blob/master/Link_to_web.png?raw=true)
 
 ## Weather
 แสดงชื่อจังหวัด สภาพอากาศ อุณหภูมิ อุณหภูมิที่รู้สึกได้ และรูปภาพของแต่ละจังหวัด
