@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Text, ImageBackground, StyleSheet, Image } from 'react-native'
+import { Text, ImageBackground, StyleSheet, Image, View } from 'react-native'
 import Forecast from './Forecast'
 
 
-
 export default function Weather(props) {
+
     const [forecastInfo, setForecastInfo] = useState({
         main: '-',
         description: '-',
@@ -28,14 +28,13 @@ export default function Weather(props) {
                 console.warn(error);
             });
         }
-    }, [props.zipCode])
+    }, [props.zipCodem])
     
 
     return (
         <ImageBackground source={require('../bg03.png')} style={styles.backdrop}>
-            <Text> Zip Code</Text>
-            <Text>{props.zipCode}</Text>
             <Forecast {...forecastInfo}/>
+            {/* <Text>{props.zipCode}</Text> */}
         </ImageBackground>
     )
 }
@@ -46,6 +45,6 @@ const styles = StyleSheet.create({
         // justifyContent: 'center',
         alignItems: 'center', // opposite of FlexDirection is lanscape
         width: '100%',
-        height: '100%'
+        height: '100%',
     }
 })
