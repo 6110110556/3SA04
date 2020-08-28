@@ -43,13 +43,13 @@ export default function Forecast(props){
         bg = require("../bgCloud.jpg");
     }
     if(props.main == "Rain"){
-        bg = require("../bgRain.jpg");
+        bg = require("../bgRain.jpeg");
     }
 
 
     return (
-        <ImageBackground source={bg} style={styles.backdrop}>
-        <View>
+        <ImageBackground source={bg} style={styles.backdrop02}>
+        <View style={styles.backdrop}>
             <Text style={styles.h1}>{nameProv}</Text>
             <Text style={styles.h2}>{props.main}</Text>
             <Text style={styles.h2}>{props.description}</Text>
@@ -80,11 +80,20 @@ const styles = StyleSheet.create({
 
     backdrop: {
         flexDirection: 'column', //This is Default this is Portrait
-        // justifyContent: 'center',
+        justifyContent: 'center',
         alignItems: 'center', // opposite of FlexDirection is lanscape
         width: '100%',
         height: '100%',
     },
+
+    backdrop02: {
+        flexDirection: 'column', //This is Default this is Portrait
+        justifyContent: 'center',
+        alignItems: 'center', // opposite of FlexDirection is lanscape
+        width: '100%',
+        height: '100%',
+        opacity: 0.7,
+    }
 
 
 })
